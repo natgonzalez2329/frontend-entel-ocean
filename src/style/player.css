@@ -1,0 +1,10 @@
+.player {
+    flex: 0.6;
+    position: relative;
+    height: 30rem;
+}
+.player-react {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,14 @@
+.videosView {
+  flex: 0.8;
+  background-color: rgba(0, 0, 0, 0.856);
+  padding-bottom: 0;
+}
+.videosView > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.videosView__content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

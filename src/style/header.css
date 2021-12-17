@@ -1,0 +1,24 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    height: 48px;
+    object-fit: contain;
+}
+.header__input {
+    display: flex;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+}

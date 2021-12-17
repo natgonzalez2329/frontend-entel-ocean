@@ -1,0 +1,18 @@
+.videoCard {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(1, 16rem);
+  justify-content: center;
+  height: 30rem;
+}
+.videoCard__card {
+  background-color: rgba(0, 0, 0, 0.801);
+  cursor: pointer;
+  margin-bottom: 40px;
+  width: 270px;
+}
+.videoCard__image {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}

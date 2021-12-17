@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./components/Header.jsx";
+import Sidebar from "./components/Sidebar.jsx";
+import VideosView from "./components/VideosView.jsx";
+import apiTest from "./api/apiTest.json";
 
 function App() {
+  const getDataVideos = apiTest;
+  const [videoData, setVideoData] = useState([]);
+
+  useEffect(() => {
+    setVideoData(getDataVideos.videos);
+  }, [getDataVideos]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Header />
+      </div>
+      <div className="app__main">
+        <Sidebar />
+        <VideosView videoData={videoData} />
+      </div>
     </div>
   );
 }
